@@ -1,2 +1,2 @@
-# cse134-hw2
-Plan Site and Semantic HTML Execution - Site Build Out Phase 1
+# cse134-hw3
+Standards Based CSS Responsive Web Design- Site Build Out Phase 2
