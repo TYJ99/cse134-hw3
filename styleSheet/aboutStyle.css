@@ -90,12 +90,15 @@ main {
     overflow-x: hidden;
 }
 
-#introduce {
-    /* position: relative; */
-    /* left: 30%;
-    bottom: 30%;  */
-    transform: translate(30%, 20%);
-    transition: 1s;
+#leftMainContent {
+    margin-left: 10%;
+    margin-right: 25%;
+    font-size: 1.5rem;
+}
+
+#leftMainContent::selection {
+    background-color: bisque;
+    color: #060a23;
 }
 
 #currPage {
@@ -178,10 +181,10 @@ main {
     border-radius: 50%;
 }
 
-#helloMyName {
+/* #helloMyName {
     font-size: 300%;
 }
 
 #hello {
     font-size: 80%;
-}
+} */
