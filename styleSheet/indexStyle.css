@@ -4,6 +4,13 @@
 
 }
 
+/* degug overflow */
+/* * {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+} */
+
 a {
     text-decoration: none;
 }
@@ -21,7 +28,7 @@ body {
     justify-content: space-around;
     gap: 20px;
     background-image: url("/img/bgImg.jpg");
-    background-size: cover;
+    background-size:100vw;
 }
 
 hr {
@@ -30,7 +37,7 @@ hr {
 }
 
 #homeTopSection {
-    width: 100vw;
+    width: 100%;
     padding: 5px;
     display: flex;
     flex-direction: row;
@@ -41,21 +48,22 @@ hr {
 
 }
 
-#homeTopSection header, #homeTopSection nav {
-    display: inline-block;
+#homeTopSection header {
+    /* display: inline-block; */
+    flex-basis: 15%;
     text-align: center;
-    flex-grow: 1;
+    /* flex-grow: 1; */
 }
 
 #homeTopSection nav {
-    flex-grow: 4;
+    flex-basis: 85%;
 }
 
 #navUl {
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-around;
     justify-items: center;
     flex-wrap: wrap;
     margin: 0;
@@ -65,7 +73,6 @@ hr {
 #navUl li {
     list-style-type: none;
     display: inline;
-    flex-grow: 1;
     margin: 0;
     padding: 0;
 }
@@ -79,26 +86,33 @@ main {
     display: flex;
     flex-basis: 80%;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;    
+    overflow-x: hidden;
 }
 
 #introduce {
-    transform: translate(30%, -40%);
+    /* position: relative; */
+    /* left: 30%;
+    bottom: 30%;  */
+    transform: translate(30%, 20%);
     transition: 1s;
 }
 
 #currPage {
+    margin-top: 0;
+    font-size: 250%;
+    margin-left: 10%;
     animation-duration: 2s;
     animation-name: slidein;
 }
 
 @keyframes slidein {
     from {
-      margin-left: 80%;
+      margin-left: 150%;
     }
   
     to {
-      margin-left: 0%;
+      margin-left: 10%;
     }
 }
 
@@ -117,7 +131,7 @@ main {
 }
 
 #footerSection1 {
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -155,4 +169,19 @@ main {
     height: 7ex;
     color:blue;
     background-color: aliceblue;
+    transition: 0.5s;
+}
+
+#downloadResume:hover{
+    background-color: aqua;
+    color: darkblue;
+    border-radius: 50%;
+}
+
+#helloMyName {
+    font-size: 300%;
+}
+
+#hello {
+    font-size: 80%;
 }
