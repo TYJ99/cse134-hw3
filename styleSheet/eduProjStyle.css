@@ -4,6 +4,11 @@
 
 }
 
+*::selection {
+    background-color: bisque;
+    color: #060a23;
+}
+
 /* degug overflow */
 /* * {
     background: #000 !important;

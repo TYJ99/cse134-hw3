@@ -1,7 +1,12 @@
 * {
     color:aliceblue;
     font-family: 'Caveat', cursive;
+    
+}
 
+*::selection {
+    background-color: bisque;
+    color: #060a23;
 }
 
 /* degug overflow */

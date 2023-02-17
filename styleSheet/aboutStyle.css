@@ -1,7 +1,12 @@
 * {
     color:aliceblue;
     font-family: 'Caveat', cursive;
+    
+}
 
+*::selection {
+    background-color: bisque;
+    color: #060a23;
 }
 
 /* degug overflow */
@@ -96,10 +101,10 @@ main {
     font-size: 1.5rem;
 }
 
-#leftMainContent::selection {
+/* #leftMainContent::selection {
     background-color: bisque;
     color: #060a23;
-}
+} */
 
 #currPage {
     margin-top: 0;
