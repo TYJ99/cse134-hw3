@@ -5,36 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yen-Ju Tseng's Website</title>
-    <style>
-        
-    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="styleSheet/reset.css"> -->
     
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styleSheet/indexStyle.css">
 </head>
 <body>
-    <main>
+    <section id="homeTopSection">
         <header>
-            <h1>Yen-Ju Tseng</h1>
-            <picture>
-                <source srcset="/img/profilePhoto.jpg" width="250" height="250">
-                <img src="/img/profilePhoto.jpg" alt="profile photo" width=250 height=250>
-            </picture>
+            <h3>Yen-Ju Tseng</h3>
         </header>
-        <p>
-            I'M<br>
-            YEN-JU<br>
-            TSENG.
-        </p>
-        <p>
-            MS in <i>Electrical and Computer Engineering</i> @ UCSD<br>
-            San Diego, California
-        </p>
-
-        <h2>Home</h2>
-
+        
         <nav>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
+            <ul id="navUl">
+                <li><a href="./index.html" aria-current="page">Home</a></li>
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./eduProj.html">Education&Projects</a></li>
                 <li><a href="./skillsLang.html">Skills&Languages</a></li>
@@ -43,14 +30,58 @@
                 <li><a href="./testTag.html">TestTag</a></li>
             </ul>
         </nav>
+    </section>
+    <main>
+        <section id="leftMain">
+            <header>
+                <h3 id="currPage">Home</h3>
+            </header>
+            <div id="introduce">
+                <p id="hello">HELLO, I'M</p>
+                <p id="helloMyName">YEN-JU TSENG.</p>
+                <p id="helloMyMajor">Electrical and Computer Engineering Student.</p>
+            </div>
+        </section>
+
+        <section id="rightMain">
+            <header>
+                <picture id="profilePhoto">
+                    <source srcset="/img/profilePhoto.jpg">
+                    <img src="/img/profilePhoto.jpg" alt="profile photo">
+                </picture>
+                <h1>YEN-JU TSENG</h1>
+            </header>
+            <p>
+                MS in <i>Electrical and Computer Engineering</i> @ UCSD<br>
+                San Diego, California
+            </p>
+            <a href="/resumeCV/Yen-Ju Tseng Resume.pdf" download id="downloadResume">Download<br>Resume</a>
+            
+        </section>
     </main>
-    
     <hr>
     <footer>
-        <section>
-            <h3>Contact</h3>
-            Email: ytseng@ucsd.edu <br>
-            LinkedIn: <a href="https://www.linkedin.com/in/yenjutseng/">LinkedIn Link</a>
+        <section id="footerSection1">
+            <h1>Contact</h1>
+            <section id="footerSection2">
+                <p>Email: ytseng@ucsd.edu</p>
+                
+                <p id="footerMedia">
+                    <a href="https://www.linkedin.com/in/yenjutseng/">
+                        <img src="img/linkedInLogo.png" class="mediaImg">
+                    </a>
+                
+            
+                    <a href="https://www.instagram.com/tyj.99/">
+                        <img src="img/instagramLogo.png" class="mediaImg">
+                    </a>
+                
+                
+                    <a href="https://www.facebook.com/andy.tseng.3551">
+                        <img src="img/facebookLogo.png" class="mediaImg">
+                    </a>
+                </p>
+            </section>
         </section>
     </footer>
 
