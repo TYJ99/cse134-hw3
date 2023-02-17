@@ -285,3 +285,40 @@ main {
         background-size:cover;
     }
 }
+
+@media (max-width: 490px) {
+    #topSection header {
+        display: none;
+    }
+
+    #footerMedia {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #footerSection1 h1 {
+        display: none;
+    }
+
+    #footerSection2 {
+        display: flex;
+        flex-basis: 100%;
+        flex-direction: row;
+        justify-content: space-between;    
+        align-items: center;
+        
+    }
+
+    #navUl {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+    }
+    
+
+}

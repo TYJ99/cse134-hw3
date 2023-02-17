@@ -289,3 +289,9 @@ button:active {
         background-size:cover;
     }
 }
+
+@media (max-width:678px) {
+    #name::placeholder, #email::placeholder, #phone::placeholder {
+        color: transparent;
+    }
+}
