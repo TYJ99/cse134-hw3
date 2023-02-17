@@ -1,3 +1,8 @@
+:root {
+    --selection-bg-color: bisque;
+    --selection-font-color: #060a23;
+}
+
 * {
     color:aliceblue;
     font-family: 'Caveat', cursive;
@@ -5,8 +10,8 @@
 }
 
 *::selection {
-    background-color: bisque;
-    color: #060a23;
+    background-color: var(--selection-bg-color);
+    color: var(--selection-font-color);
 }
 
 /* degug overflow */
