@@ -149,8 +149,17 @@ main {
     padding: 2%;
     background-color: #060a23;
 }
+#eduTable th::selection, #eduTable td::selection{
+    background-color: rgb(65, 65, 104);
+    color: rgb(148, 185, 156);
+}
 
-#leftMainContent::selection {
+#eduTable th:hover{
+    background-color: rgb(132, 126, 119);
+    color: #010315;
+}
+
+#eduTable td:hover {
     background-color: bisque;
     color: #060a23;
 }
