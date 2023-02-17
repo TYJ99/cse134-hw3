@@ -46,8 +46,14 @@
         <section id="rightMain">
             <header>
                 <picture id="profilePhoto">
-                    <source srcset="/img/profilePhoto2.png">
-                    <img src="/img/profilePhoto2.png" alt="profile photo">
+                    <source media="(min-width: 320px)" srcset="/img/phone_320/profilePhoto2.png"/>
+                    <source media="(min-width: 375px)" srcset="/img/phone_375/profilePhoto2.png"/>
+                    <source media="(min-width: 481px)" srcset="/img/tablet_481/profilePhoto2.png"/>
+                    <source media="(min-width: 768px)" srcset="/img/tablet_768/profilePhoto2.png"/>
+                    <source media="(min-width: 1025px)" srcset="/img/laptop_1025/profilePhoto2.png"/>
+                    <source media="(min-width: 1280px)" srcset="/img/desktop_1280/profilePhoto2.png"/>
+                    <source media="(min-width: 1920px)" srcset="/img/desktop_1920/profilePhoto2.png"/>
+                    <img src="/img/phone_320/profilePhoto2.png" alt="profile photo">
                 </picture>
                 <h1>YEN-JU TSENG</h1>
             </header>
@@ -68,17 +74,26 @@
                 
                 <p id="footerMedia">
                     <a href="https://www.linkedin.com/in/yenjutseng/">
-                        <img src="img/linkedInLogo.png" class="mediaImg">
+                        <picture>
+                            <source srcset="/img/25x25/linkedInLogo.png"/>
+                            <img src="img/25x25/linkedInLogo.png" alt="linkedin logo" class="mediaImg">
+                        </picture>
                     </a>
                 
             
                     <a href="https://www.instagram.com/tyj.99/">
-                        <img src="img/instagramLogo.png" class="mediaImg">
+                        <picture>
+                            <source srcset="/img/25x25/instagramLogo.png"/>
+                            <img src="img/25x25/instagramLogo.png" alt="instagram logo" class="mediaImg">
+                        </picture>
                     </a>
                 
                 
                     <a href="https://www.facebook.com/andy.tseng.3551">
-                        <img src="img/facebookLogo.png" class="mediaImg">
+                        <picture>
+                            <source srcset="/img/25x25/facebookLogo.png"/>
+                            <img src="img/25x25/facebookLogo.png" alt="facebook logo" class="mediaImg">
+                        </picture>
                     </a>
                 </p>
             </section>
