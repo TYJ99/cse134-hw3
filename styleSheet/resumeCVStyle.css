@@ -150,7 +150,7 @@ main {
 }
 
 #profilePhoto img{
-    width: 100%;
+    width: 60%;
     transition: border-radius 1s;
 }
 
