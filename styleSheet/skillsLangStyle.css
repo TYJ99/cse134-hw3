@@ -114,6 +114,7 @@ main {
 }
 
 #headers h1 {
+    
     margin-top: 0;
     animation-duration: 2s;
     animation-name: slidein;
@@ -125,7 +126,7 @@ main {
     }
   
     to {
-      margin-left: 10%;
+      margin-left: 0%;
     }
 }
 
