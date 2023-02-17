@@ -4,64 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yen-Ju Tseng's Website</title>
-    <style>
-        
-    </style>
+    <title>Yen-Ju Tseng's Website - skillsLang</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="styleSheet/reset.css"> -->
     
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styleSheet/skillsLangStyle.css">
 </head>
 <body>
-    <main>
+    <section id="topSection">
         <header>
-            <h1>Yen-Ju Tseng</h1>            
+            <h1>Yen-Ju Tseng</h1>
         </header>
-        <p>
-            I'M<br>
-            YEN-JU<br>
-            TSENG.
-        </p>
-        <p>
-            MS in <i>Electrical and Computer Engineering</i> @ UCSD<br>
-            San Diego, California
-        </p>
         
-        <h2>Skills & Languages</h2>
-        <nav aria-label="main">
-            <ul>
+        <nav>
+            <ul id="navUl">
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./eduProj.html">Education&Projects</a></li>
-                <li><a href="./skillsLang.html" aria-current="page">Skills&Languages</a></li>
+                <li><a href="./skillsLang.html aria-current="page"">Skills&Languages</a></li>
                 <li><a href="./resumeCV.html">Resume/CV</a></li>
                 <li><a href="./contact.html">Contact</a></li>
-                <li><a href="./testTag.html">TestTag</a></li>
+                <!-- <li><a href="./testTag.html">TestTag</a></li> -->
             </ul>
         </nav>
+    </section>
+    <!-- <h2 id="currPage">Education & Projects</h2> -->
+    <section>
+        <header id="headers">
+            <h1>Skills</h1>
+            <h1>Languages</h1>
+        </header>
+    </section>
+    <main>
+        <section id="leftMain">
+            <ul id="leftMainContent">
+                <li class="contentLi"><span class="heading">Programming Languages:</span> C/C++, Java, Go, Python, Kotlin, JavaScript, HTML/CSS, MATLAB</li>
+                <li class="contentLi"><span class="heading">Tools:</span> Git, Visual Studio, Visual Studio Code, Android Studio</li>
+                <li class="contentLi"><span class="heading">Areas of Expertise:</span> Computer Networks, Front-end development, Software Engineering, Algorithm, Data Structure</li>
+            </ul>
+        </section>
 
-        <div>
-                <h3>Skills:</h3>
-                <ul>
-                    <li>Programming Languages: C/C++, Java, Go, Python, Kotlin, JavaScript, HTML/CSS, MATLAB</li>
-                    <li>Tools: Git, Visual Studio, Visual Studio Code, Android Studio</li>
-                    <li>Areas of Expertise: Computer Networks, Front-end development, Software Engineering, Algorithm, Data Structure</li>
-                </ul>
-
-                <h3>Languages:</h3>
-                <ul>
-                    <li>Languages: Mandarin, English</li>
-                </ul>
-                
-        </div>
-
+        <section id="rightMain">
+            <ul>
+                <li class="contentLi"><span class="heading">Languages:</span> Mandarin, English</li>
+            </ul>
+        </section>
     </main>
-    
     <hr>
     <footer>
-        <h3>Contact</h3>
-        <section>
-            Email: ytseng@ucsd.edu <br>
-            LinkedIn: <a href="https://www.linkedin.com/in/yenjutseng/">LinkedIn Link</a>
+        <section id="footerSection1">
+            <h1>Contact</h1>
+            <section id="footerSection2">
+                <p>Email: ytseng@ucsd.edu</p>
+                
+                <p id="footerMedia">
+                    <a href="https://www.linkedin.com/in/yenjutseng/">
+                        <img src="img/linkedInLogo.png" class="mediaImg">
+                    </a>
+                
+            
+                    <a href="https://www.instagram.com/tyj.99/">
+                        <img src="img/instagramLogo.png" class="mediaImg">
+                    </a>
+                
+                
+                    <a href="https://www.facebook.com/andy.tseng.3551">
+                        <img src="img/facebookLogo.png" class="mediaImg">
+                    </a>
+                </p>
+            </section>
         </section>
     </footer>
 
